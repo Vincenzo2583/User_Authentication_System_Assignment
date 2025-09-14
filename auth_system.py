@@ -64,7 +64,8 @@ def remove_user(user_id):
     if user_id in users:
         deleted_user = users.pop(user_id)
         return{"status": "success", "message": f"User {deleted_user['name']} removed successfully"}
-    
+
+ #Bonus Challenge   
 def list_users(users):
     user_list = []
     for user_id, user in users.items():
